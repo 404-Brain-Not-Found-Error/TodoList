@@ -3,7 +3,7 @@ from typing import Annotated
 from fastapi import Depends
 
 from src.database import async_session_maker
-from utils.db_manager import DBManager
+from src.utils.db_manager import DBManager
 
 
 async def get_db():

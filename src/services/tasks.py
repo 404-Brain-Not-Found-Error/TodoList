@@ -1,3 +1,4 @@
+from src.exceptions import ObjectNotFoundException, TaskNotFoundException
 from src.schemas.tasks import TaskAddRequest, Task
 from src.services.base import BaseService
 

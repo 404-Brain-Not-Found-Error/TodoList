@@ -16,6 +16,10 @@ class TaskNotFoundException(ObjectNotFoundException):
     detail = "Задача не найдена"
 
 
+class ProjectNotFoundException(ObjectNotFoundException):
+    detail = "Проект не найден"
+
+
 class ZadachiHTTPException(HTTPException):
     status_code = 500
     detail = None
@@ -27,3 +31,8 @@ class ZadachiHTTPException(HTTPException):
 class TaskNotFoundHTTPException(ZadachiHTTPException):
     status_code = 404
     detail = "Задача не найдена"
+
+
+class ProjectNotFoundHTTPException(ZadachiHTTPException):
+    status_code = 404
+    detail = "Проект не найден"

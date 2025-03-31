@@ -8,10 +8,10 @@ from src.database import Base
 
 
 class TaskStatus(str, PyEnum):
-    TODO = "Cделать"
-    IN_PROGRESS = "В процессе"
-    DONE = "Выполнено"
-    ARCHIVED = "В архиве"
+    TODO = "todo"
+    IN_PROGRESS = "in_progress"
+    DONE = "done"
+    ARCHIVED = "archived"
 
 
 class ProjectORM(Base):

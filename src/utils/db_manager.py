@@ -1,4 +1,5 @@
 from src.repositories.tasks import TasksRepository
+from src.repositories.projects import ProjectsRepository
 
 
 class DBManager:
@@ -9,6 +10,7 @@ class DBManager:
         self.session = self.session_factory()
 
         self.tasks = TasksRepository(self.session)
+        self.projects = ProjectsRepository(self.session)
 
         return self
 

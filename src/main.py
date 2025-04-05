@@ -9,6 +9,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 app = FastAPI(docs_url=None)
 
+
 @app.get("/docs", include_in_schema=False)
 async def custom_swagger_ui_html():
     return get_swagger_ui_html(
